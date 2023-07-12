@@ -1,6 +1,10 @@
+/* DEBUG */
+
 .debug {
   border: 2px dashed red;
 }
+
+/* HEADER */
 
 header {
   width: 100%;
@@ -14,13 +18,34 @@ header {
   background-color: white;
 }
 
-.logo input,
-textarea {
-  background-color: gray;
+.logo-mobile img {
+  height: 40px;
 }
 
-.search {
+/* MAIN */
+
+#main-content {
+  width: 100%;
+  height: calc(100vh - 60px);
 }
 
-.top-button {
+#main-content #sidebar {
+  background-color: #051e34;
+  width: 150px;
+  height: 100vh;
+}
+
+#content {
+  width: calc(100% - 150px);
+}
+
+.button-side {
+  color: white;
+}
+
+#head-content {
+  height: 100px;
+  background-color: #1b72e8;
+  width: 100%;
+  color: white;
 }
