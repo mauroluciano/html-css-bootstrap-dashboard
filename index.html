@@ -115,37 +115,41 @@
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          form action="http://learning.tizianonicolai.com/request-catcher/" method="GET" class="text-start">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+          <form action="http://learning.tizianonicolai.com/request-catcher/" method="GET" class="text-start">
+              
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6 mt-2">
+                  <label for="name" class="form-label">Name</label>
                 <input class="form-control" id="name" name="name" type="text">
+                </div>
+                <div class="col-6 mt-2">
+                  <label for="surname" class="form-label">Surname</label>
+                <input class="form-control" id="name" name="surname" type="text">
+                </div>
+                <div class="col-6 mt-2">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" name="email" class="form-control" id="email" >
+                </div>
+                <div class="col-6 mt-2">
+                  <label for="tel" class="form-label">Phone number</label>
+                  <input type="tel" name="tel"   class="form-control" id="tel">
+                </div>
+
+                <div class="col-12 mt-2">
+                  <label for="textarea" class="form-label">Message</label>
+                  <textarea class="form-control" name="textarea" id="textarea" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2" value="Send">Send</button>
+
+
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
-                <input type="email" name="email" class="form-control" id="email" >
-              </div>
-              <div class="mb-3">
-                <label for="tel" class="form-label">Phone number</label>
-                <input type="tel" name="tel"   class="form-control" id="tel">
-              </div>
-              <div class="mb-3">
-                <label for="textarea" class="form-label">Message</label>
-                <textarea class="form-control" name="textarea" id="textarea" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" value="Send">Send</button>
+            </div>
+
             </form>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
 
     </div>
   </div>
