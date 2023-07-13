@@ -24,7 +24,6 @@ header {
 
 .box {
   height: auto;
-  border: 1px solid lightgray;
 }
 
 /* MAIN */
@@ -63,10 +62,28 @@ header {
 }
 
 .box #title-box {
-  width: 100%;
-  height: 20px;
+  height: auto;
   background-color: lightgray;
-  border: 1px lightgray solid;
+}
+
+label {
+  padding: 3px;
+  height: auto;
+  color: white;
+  border-radius: 2px;
+  width: 60px;
+}
+
+label.green {
+  background-color: green;
+}
+
+label.yellow {
+  background-color: rgb(235, 235, 14);
+}
+
+label.red {
+  background-color: red;
 }
 
 /* SIDEBAR */
