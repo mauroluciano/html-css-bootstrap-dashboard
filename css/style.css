@@ -113,6 +113,11 @@ label.red {
   border-bottom: 1px solid lightgray;
 }
 
+/* offcanvas */
+
+.offcanvas-body label {
+}
+
 /* responsive DESKTOP */
 
 @media screen and (min-width: 768px) {
