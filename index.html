@@ -50,8 +50,12 @@
     <main>
       <div id="main-content" class="d-flex flex-row">
         <div id="sidebar" class="d-flex flex-column align-items-center">
-          <div class="button-side py-4 d-block d-md-none">
+          <div class="button-side d-flex flex-column d-block d-md-none py-4">
             <i class="fas fa-home py-2"></i>
+            <i class="fas fa-poll py-2"></i>
+            <i class="fas fa-signal py-2"></i>
+
+
           </div>
 
           <div class="button-side py-4 d-none d-md-block">
@@ -83,8 +87,14 @@
 <div class="container-fluid ">
   <div class="row my-2 d-flex">
     <div class="col-sm-12 col-md-4 my-2 flex-grow-1">
-      <div>Boolean<label class="text-center  p-1 m-1">Piano Blaze</label></div>
-      <div><label class="text-center p-1 m-1">3app</label><i class="fas fa-angle-double-right"></i><label class="text-center p-1 m-1">Boolean mobile app</label><label class="text-center p-1 m-1">Boolean web app</label><label class="text-center p-1 m-1">Boolean blog app</label></div>
+      <div>Boolean<label class="text-center  p-1 m-1">Piano Blaze</label>
+      </div>
+      <div><label class="text-center p-1 m-1">3app</label>
+        <i class="fas fa-angle-double-right"></i>
+        <label class="text-center p-1 m-1">Boolean mobile app</label>
+        <label class="text-center p-1 m-1">Boolean web app</label>
+        <label class="text-center p-1 m-1">Boolean blog app</label>
+      </div>
 
     </div>
     <div class="col-sm-12 col-md-4 my-2">
@@ -93,7 +103,50 @@
 
     </div>
     <div class="col-sm-12 col-md-4 my-2">
-      Nuovo studente
+      Nuovo studente 
+
+
+
+      <i class="fas fa-plus-square" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          form action="http://learning.tizianonicolai.com/request-catcher/" method="GET" class="text-start">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input class="form-control" id="name" name="name" type="text">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" name="email" class="form-control" id="email" >
+              </div>
+              <div class="mb-3">
+                <label for="tel" class="form-label">Phone number</label>
+                <input type="tel" name="tel"   class="form-control" id="tel">
+              </div>
+              <div class="mb-3">
+                <label for="textarea" class="form-label">Message</label>
+                <textarea class="form-control" name="textarea" id="textarea" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" value="Send">Send</button>
+            </form>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 </div>
@@ -174,18 +227,31 @@
                 </tr>
               </tbody>
             </table>
-          </div>
+   
+
+            <div id="title-box" class="p-2">F.A.Q.</div>
+
+              <div id="faq">                
+                <ul class="p-3 d-flex flex-column">
+                <li class="p-3"><span>Come aggiungere un nuovo studente?</span>  <i class="fas fa-chevron-down d-flex justify-content-end"></i></li>
+                <li class="p-3"><span>Come posso accedere alle informazioni del mio account?</span>  <i class="fas fa-chevron-down d-flex justify-content-end"></i></li>
+                <li class="p-3"><span>Posso usare questa Dashboard da mobile?</span>  <i class="fas fa-chevron-down d-flex justify-content-end"></i></li>
+
+              </ul>
+            </div>
+</div>
+
           <div class="box col-12 col-md-4 p-2">
             <div id="title-box" class="p-2">Todo</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum expedita voluptatem vitae voluptates. Facilis odio aperiam aut sit beatae iure molestiae porro vitae consequuntur illo, aliquam nam omnis iusto nobis?</p>
+              <div class="todo-box  my-3 p-3">
+                <ul>
+                  <li> <input type="checkbox" class="py-1"> Kickoff nuove class</li>
+                  <li> <input type="checkbox" class="py-1"> Lezione di Bootstrap 5 in classe #75</li>
+                  <li> <input type="checkbox" class="py-1"> Controllare username GitHub studenti</li>
 
-          </div>
-          <div class="box col-12 col-md-8 p-2">
-            <div id="title-box" class="p-2">F.A.Q.</div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum expedita voluptatem vitae voluptates. Facilis odio aperiam aut sit beatae iure molestiae porro vitae consequuntur illo, aliquam nam omnis iusto nobis?</p>
-
-          </div>
-          <div class="box col-12 col-md-4 p-2">            
+                </ul>
+              </div>
+          
             <div id="title-box" class="p-2">Prossime classi</div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum expedita voluptatem vitae voluptates. Facilis odio aperiam aut sit beatae iure molestiae porro vitae consequuntur illo, aliquam nam omnis iusto nobis?</p>
 
